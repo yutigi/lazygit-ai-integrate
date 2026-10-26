@@ -76,7 +76,7 @@ _This file is auto-generated. To update, make the changes in the pkg/i18n direct
 | `` <esc> `` | 退出回到側邊面板 |  |
 | `` c `` | 提交變更 | 提交暫存區變更 |
 | `` w `` | 沒有預提交 hook 就提交更改 |  |
-| `` C `` | 使用 git 編輯器提交變更 |  |
+| `` C `` | Choose commit method |  |
 | `` <ctrl+f> `` | 尋找 fixup 的基礎提交 | 找出目前變更所依據的提交，以便 amend/fixup。這樣不必逐一檢視分支中的提交來找出要 amend/fixup 的提交。請見文件：<https://github.com/jesseduffield/lazygit/tree/master/docs/Fixup_Commits.md> |
 | `` / `` | 搜尋 |  |
 
@@ -309,7 +309,7 @@ _This file is auto-generated. To update, make the changes in the pkg/i18n direct
 | `` c `` | 提交變更 | 提交暫存區變更 |
 | `` w `` | 沒有預提交 hook 就提交更改 |  |
 | `` A `` | 修改上次提交 |  |
-| `` C `` | 使用 git 編輯器提交變更 |  |
+| `` C `` | Choose commit method |  |
 | `` <ctrl+f> `` | 尋找 fixup 的基礎提交 | 找出目前變更所依據的提交，以便 amend/fixup。這樣不必逐一檢視分支中的提交來找出要 amend/fixup 的提交。請見文件：<https://github.com/jesseduffield/lazygit/tree/master/docs/Fixup_Commits.md> |
 | `` e `` | 編輯 | 使用外部編輯器開啟 |
 | `` o `` | 開啟檔案 | 使用預設軟體開啟 |
@@ -352,7 +352,7 @@ _This file is auto-generated. To update, make the changes in the pkg/i18n direct
 | `` <esc> `` | 退出回到側邊面板 |  |
 | `` c `` | 提交變更 | 提交暫存區變更 |
 | `` w `` | 沒有預提交 hook 就提交更改 |  |
-| `` C `` | 使用 git 編輯器提交變更 |  |
+| `` C `` | Choose commit method |  |
 | `` <ctrl+f> `` | 尋找 fixup 的基礎提交 | 找出目前變更所依據的提交，以便 amend/fixup。這樣不必逐一檢視分支中的提交來找出要 amend/fixup 的提交。請見文件：<https://github.com/jesseduffield/lazygit/tree/master/docs/Fixup_Commits.md> |
 | `` / `` | 搜尋 |  |
 

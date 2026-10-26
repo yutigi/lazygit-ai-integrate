@@ -34,6 +34,11 @@ type TranslationSet struct {
 	PassUnameWrong                        string
 	Commit                                string
 	CommitTooltip                         string
+	CommitMethodTitle                     string
+	AICommit                              string
+	EnterCommitMessage                    string
+	GeneratingCommitMessage               string
+	AICommitFailed                        string
 	AmendLastCommit                       string
 	AmendLastCommitTitle                  string
 	SureToAmend                           string
@@ -1244,6 +1249,11 @@ func EnglishTranslationSet() *TranslationSet {
 		PassUnameWrong:                       "Password, passphrase and/or username wrong",
 		Commit:                               "Commit",
 		CommitTooltip:                        "Commit staged changes.",
+		CommitMethodTitle:                    "Choose commit method",
+		AICommit:                             "AI commit",
+		EnterCommitMessage:                   "Enter commit message",
+		GeneratingCommitMessage:              "Generating commit message",
+		AICommitFailed:                       "Could not generate commit message: {{.error}}",
 		AmendLastCommit:                      "Amend last commit",
 		AmendLastCommitTitle:                 "Amend last commit",
 		SureToAmend:                          "Are you sure you want to amend last commit? Afterwards, you can change the commit message from the commits panel.",

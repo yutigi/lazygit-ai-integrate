@@ -141,7 +141,7 @@ _This file is auto-generated. To update, make the changes in the pkg/i18n direct
 | `` c `` | Commit | Commit staged changes. |
 | `` w `` | Commit changes without pre-commit hook |  |
 | `` A `` | Amend last commit |  |
-| `` C `` | Commit changes using git editor |  |
+| `` C `` | Choose commit method |  |
 | `` <ctrl+f> `` | Find base commit for fixup | Find the commit that your current changes are building upon, for the sake of amending/fixing up the commit. This spares you from having to look through your branch's commits one-by-one to see which commit should be amended/fixed up. See docs: <https://github.com/jesseduffield/lazygit/tree/master/docs/Fixup_Commits.md> |
 | `` e `` | Edit | Open file in external editor. |
 | `` o `` | Open file | Open file in default application. |
@@ -240,7 +240,7 @@ _This file is auto-generated. To update, make the changes in the pkg/i18n direct
 | `` <esc> `` | Exit back to side panel |  |
 | `` c `` | Commit | Commit staged changes. |
 | `` w `` | Commit changes without pre-commit hook |  |
-| `` C `` | Commit changes using git editor |  |
+| `` C `` | Choose commit method |  |
 | `` <ctrl+f> `` | Find base commit for fixup | Find the commit that your current changes are building upon, for the sake of amending/fixing up the commit. This spares you from having to look through your branch's commits one-by-one to see which commit should be amended/fixed up. See docs: <https://github.com/jesseduffield/lazygit/tree/master/docs/Fixup_Commits.md> |
 | `` / `` | Search the current view by text |  |
 
@@ -324,7 +324,7 @@ _This file is auto-generated. To update, make the changes in the pkg/i18n direct
 | `` <esc> `` | Exit back to side panel |  |
 | `` c `` | Commit | Commit staged changes. |
 | `` w `` | Commit changes without pre-commit hook |  |
-| `` C `` | Commit changes using git editor |  |
+| `` C `` | Choose commit method |  |
 | `` <ctrl+f> `` | Find base commit for fixup | Find the commit that your current changes are building upon, for the sake of amending/fixing up the commit. This spares you from having to look through your branch's commits one-by-one to see which commit should be amended/fixed up. See docs: <https://github.com/jesseduffield/lazygit/tree/master/docs/Fixup_Commits.md> |
 | `` / `` | Search the current view by text |  |
 

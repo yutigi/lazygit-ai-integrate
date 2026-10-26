@@ -229,6 +229,13 @@ func (self *MainViewController) GetKeybindings(opts types.KeybindingsOpts) []*ty
 			DescriptionFunc: self.workingTreeActionDescription(self.c.Tr.CommitChangesWithEditor),
 		},
 		{
+			Keys:            opts.GetKeys(opts.Config.Files.CommitMenu),
+			Handler:         self.workingTreeAction(self.c.Helpers().WorkingTree.OpenCommitMethodMenu),
+			Description:     self.c.Tr.CommitMethodTitle,
+			DescriptionFunc: self.workingTreeActionDescription(self.c.Tr.CommitMethodTitle),
+			OpensMenu:       true,
+		},
+		{
 			Keys:            opts.GetKeys(opts.Config.Files.FindBaseCommitForFixup),
 			Handler:         self.workingTreeAction(self.c.Helpers().FixupHelper.HandleFindBaseCommitForFixupPress),
 			Description:     self.c.Tr.FindBaseCommitForFixup,

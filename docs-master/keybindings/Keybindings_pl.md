@@ -116,7 +116,7 @@ _This file is auto-generated. To update, make the changes in the pkg/i18n direct
 | `` <esc> `` | Exit back to side panel |  |
 | `` c `` | Commit | Zatwierdź zmiany zatwierdzone. |
 | `` w `` | Zatwierdź zmiany bez hooka pre-commit |  |
-| `` C `` | Zatwierdź zmiany używając edytora git |  |
+| `` C `` | Choose commit method |  |
 | `` <ctrl+f> `` | Znajdź bazowy commit do poprawki | Znajdź commit, na którym opierają się Twoje obecne zmiany, w celu poprawienia/zmiany commita. To pozwala Ci uniknąć przeglądania commitów w Twojej gałęzi jeden po drugim, aby zobaczyć, który commit powinien być poprawiony/zmieniony. Zobacz dokumentację: <https://github.com/jesseduffield/lazygit/tree/master/docs/Fixup_Commits.md> |
 | `` / `` | Szukaj w bieżącym widoku po tekście |  |
 
@@ -219,7 +219,7 @@ _This file is auto-generated. To update, make the changes in the pkg/i18n direct
 | `` <esc> `` | Exit back to side panel |  |
 | `` c `` | Commit | Zatwierdź zmiany zatwierdzone. |
 | `` w `` | Zatwierdź zmiany bez hooka pre-commit |  |
-| `` C `` | Zatwierdź zmiany używając edytora git |  |
+| `` C `` | Choose commit method |  |
 | `` <ctrl+f> `` | Znajdź bazowy commit do poprawki | Znajdź commit, na którym opierają się Twoje obecne zmiany, w celu poprawienia/zmiany commita. To pozwala Ci uniknąć przeglądania commitów w Twojej gałęzi jeden po drugim, aby zobaczyć, który commit powinien być poprawiony/zmieniony. Zobacz dokumentację: <https://github.com/jesseduffield/lazygit/tree/master/docs/Fixup_Commits.md> |
 | `` / `` | Szukaj w bieżącym widoku po tekście |  |
 
@@ -258,7 +258,7 @@ _This file is auto-generated. To update, make the changes in the pkg/i18n direct
 | `` c `` | Commit | Zatwierdź zmiany zatwierdzone. |
 | `` w `` | Zatwierdź zmiany bez hooka pre-commit |  |
 | `` A `` | Popraw ostatni commit |  |
-| `` C `` | Zatwierdź zmiany używając edytora git |  |
+| `` C `` | Choose commit method |  |
 | `` <ctrl+f> `` | Znajdź bazowy commit do poprawki | Znajdź commit, na którym opierają się Twoje obecne zmiany, w celu poprawienia/zmiany commita. To pozwala Ci uniknąć przeglądania commitów w Twojej gałęzi jeden po drugim, aby zobaczyć, który commit powinien być poprawiony/zmieniony. Zobacz dokumentację: <https://github.com/jesseduffield/lazygit/tree/master/docs/Fixup_Commits.md> |
 | `` e `` | Edytuj | Otwórz plik w zewnętrznym edytorze. |
 | `` o `` | Otwórz plik | Otwórz plik w domyślnej aplikacji. |

@@ -574,6 +574,16 @@ git:
   # to 40 to disable truncation.
   truncateCopiedCommitHashesTo: 12
 
+# AI commit message generation using an installed and authenticated CLI.
+ai:
+  # CLI to generate commit messages with: 'claude' or 'codex'. Leave empty to hide
+  # AI commit from the commit-method menu.
+  provider: ""
+
+  # Model name or alias passed to the selected CLI. Leave empty to use the CLI's
+  # default model.
+  model: ""
+
 # Config relating to git worktrees
 worktree:
   # Default parent directory for new worktrees. It is offered as a candidate
@@ -780,10 +790,11 @@ keybinding:
     allBranchesLogGraph: a
     allBranchesLogGraphReverse: A
   files:
+    commitMenu: C
     commitChanges: c
     commitChangesWithoutHook: w
     amendLastCommit: A
-    commitChangesWithEditor: C
+    commitChangesWithEditor: null
     findBaseCommitForFixup: <ctrl+f>
     confirmDiscard: x
     ignoreFile: i

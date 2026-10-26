@@ -88,6 +88,12 @@ func (self *FilesController) GetKeybindings(opts types.KeybindingsOpts) []*types
 			Description: self.c.Tr.CommitChangesWithEditor,
 		},
 		{
+			Keys:        opts.GetKeys(opts.Config.Files.CommitMenu),
+			Handler:     self.c.Helpers().WorkingTree.OpenCommitMethodMenu,
+			Description: self.c.Tr.CommitMethodTitle,
+			OpensMenu:   true,
+		},
+		{
 			Keys:        opts.GetKeys(opts.Config.Files.FindBaseCommitForFixup),
 			Handler:     self.c.Helpers().FixupHelper.HandleFindBaseCommitForFixupPress,
 			Description: self.c.Tr.FindBaseCommitForFixup,

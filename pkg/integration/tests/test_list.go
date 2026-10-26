@@ -115,6 +115,8 @@ var tests = []*components.IntegrationTest{
 	commit.CheckoutFileWithLocalModifications,
 	commit.Commit,
 	commit.CommitAllWithNestedRepository,
+	commit.CommitMethodMenu,
+	commit.CommitMethodMenuWithAi,
 	commit.CommitMultiline,
 	commit.CommitSkipHooks,
 	commit.CommitSwitchToEditor,

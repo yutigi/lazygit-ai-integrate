@@ -11,6 +11,8 @@ type UserConfig struct {
 	Gui GuiConfig `yaml:"gui"`
 	// Config relating to git
 	Git GitConfig `yaml:"git"`
+	// AI commit message generation using an installed and authenticated CLI.
+	AI AIConfig `yaml:"ai"`
 	// Config relating to git worktrees
 	Worktree WorktreeConfig `yaml:"worktree"`
 	// Periodic update checks
@@ -41,6 +43,13 @@ type UserConfig struct {
 	// Keybindings.
 	// Each binding can be a single key or a list of keys; see https://github.com/jesseduffield/lazygit/blob/master/docs/keybindings/Custom_Keybindings.md for the syntax.
 	Keybinding KeybindingConfig `yaml:"keybinding"`
+}
+
+type AIConfig struct {
+	// CLI to generate commit messages with: 'claude' or 'codex'. Leave empty to hide AI commit from the commit-method menu.
+	Provider string `yaml:"provider" jsonschema:"enum=,enum=claude,enum=codex"`
+	// Model name or alias passed to the selected CLI. Leave empty to use the CLI's default model.
+	Model string `yaml:"model"`
 }
 
 type RefresherConfig struct {
@@ -588,6 +597,7 @@ type KeybindingStatusConfig struct {
 }
 
 type KeybindingFilesConfig struct {
+	CommitMenu               Keybinding `yaml:"commitMenu"`
 	CommitChanges            Keybinding `yaml:"commitChanges"`
 	CommitChangesWithoutHook Keybinding `yaml:"commitChangesWithoutHook"`
 	AmendLastCommit          Keybinding `yaml:"amendLastCommit"`
@@ -1111,7 +1121,8 @@ func GetDefaultConfigForPlatform(platform string) *UserConfig {
 				CommitChanges:            Keybinding{"c"},
 				CommitChangesWithoutHook: Keybinding{"w"},
 				AmendLastCommit:          Keybinding{"A"},
-				CommitChangesWithEditor:  Keybinding{"C"},
+				CommitMenu:               Keybinding{"C"},
+				CommitChangesWithEditor:  Keybinding{},
 				FindBaseCommitForFixup:   Keybinding{"<ctrl+f>"},
 				IgnoreFile:               Keybinding{"i"},
 				RefreshFiles:             Keybinding{"r"},

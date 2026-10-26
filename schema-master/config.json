@@ -3,6 +3,26 @@
   "$id": "https://github.com/jesseduffield/lazygit/pkg/config/user-config",
   "$ref": "#/$defs/UserConfig",
   "$defs": {
+    "AIConfig": {
+      "properties": {
+        "provider": {
+          "type": "string",
+          "enum": [
+            "",
+            "claude",
+            "codex"
+          ],
+          "description": "CLI to generate commit messages with: 'claude' or 'codex'. Leave empty to hide AI commit from the commit-method menu."
+        },
+        "model": {
+          "type": "string",
+          "description": "Model name or alias passed to the selected CLI. Leave empty to use the CLI's default model."
+        }
+      },
+      "additionalProperties": false,
+      "type": "object",
+      "description": "AI commit message generation using an installed and authenticated CLI."
+    },
     "ColorPatterns": {
       "additionalProperties": {
         "type": "string"
@@ -2165,6 +2185,20 @@
     },
     "KeybindingFilesConfig": {
       "properties": {
+        "commitMenu": {
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          ],
+          "default": "C"
+        },
         "commitChanges": {
           "oneOf": [
             {
@@ -2218,8 +2252,7 @@
               },
               "type": "array"
             }
-          ],
-          "default": "C"
+          ]
         },
         "findBaseCommitForFixup": {
           "oneOf": [
@@ -4161,6 +4194,10 @@
         "git": {
           "$ref": "#/$defs/GitConfig",
           "description": "Config relating to git"
+        },
+        "ai": {
+          "$ref": "#/$defs/AIConfig",
+          "description": "AI commit message generation using an installed and authenticated CLI."
         },
         "worktree": {
           "$ref": "#/$defs/WorktreeConfig",
