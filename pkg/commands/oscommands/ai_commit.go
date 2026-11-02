@@ -31,7 +31,7 @@ func aiCommitArgs(cfg config.AIConfig) ([]string, error) {
 	var args []string
 	switch cfg.Provider {
 	case "claude":
-		args = []string{"claude", "--print", "--output-format", "text", "--tools", "", "--strict-mcp-config", "--mcp-config", "{}", "--no-session-persistence"}
+		args = []string{"claude", "--print", "--output-format", "text", "--tools", "", "--strict-mcp-config", "--mcp-config", `{"mcpServers":{}}`, "--no-session-persistence"}
 	case "codex":
 		args = []string{"codex", "exec", "--sandbox", "read-only", "--ephemeral", "--color", "never"}
 	default:

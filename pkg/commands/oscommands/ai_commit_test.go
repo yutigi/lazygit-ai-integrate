@@ -27,6 +27,7 @@ func TestAICommitArgs(t *testing.T) {
 			} else {
 				assert.Contains(t, args, "--tools")
 				assert.Contains(t, args, "--strict-mcp-config")
+				assert.Contains(t, args, `{"mcpServers":{}}`)
 			}
 		})
 	}
